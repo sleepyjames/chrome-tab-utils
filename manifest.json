@@ -1,0 +1,37 @@
+{
+    "name": "Chrome Tab Utilities",
+    "version": "0.1",
+    "description": "Manage tabs and expose keyboard shortcuts.",
+    "manifest_version": 2,
+    "permissions": [
+        "windows",
+        "tabs"
+    ],
+    "background": {
+      "scripts": ["main.js"],
+      "persistent": false
+    },
+    "commands": {
+        "tab_utils_tab_pin": {
+            "description": "Pin the current tab"
+        },
+        "tab_utils_tab_unpin": {
+            "description": "Unpin the current tab"
+        },
+        "tab_utils_tab_move_left": {
+            "description": "Move the current tab left"
+        },
+        "tab_utils_tab_move_right": {
+            "description": "Move the current tab right"
+        },
+        "tab_utils_tab_move_end": {
+            "description": "Move the current tab to the end"
+        },
+        "tab_utils_tab_move_start": {
+            "description": "Move the current tab to the start"
+        },
+        "tab_utils_group_by_domain": {
+            "description": "Group tabs by domain"
+        }
+    }
+}
